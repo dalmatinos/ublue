@@ -17,7 +17,8 @@ set -ouex pipefail
 # systemctl enable --now docker.service
 
 # this installs a package from fedora repos
-dnf5 install -y alacritty 
+dnf5 install -y alacritty \
+                podman-docker
 # this removes unwanted software
 dnf5 remove -y Sunshine 
 
